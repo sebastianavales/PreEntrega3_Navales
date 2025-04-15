@@ -1,5 +1,5 @@
 # 💫 About Me:
-Soy Ingeniero Administrador apasionado por conocimientos en tecnología,<br>Actualmente trabajo con el lenguaje de programación Python, enfocado en analítica de datos y automatización de procesos.<br>Además, me esto formando como desarrollador full stack.
+Soy Ingeniero Administrador apasionado por conocimientos en tecnología,<br>Actualmente trabajo con el lenguaje de programación Python, enfocado en analítica de datos y automatización de procesos.<br>Además, me estoy formando como desarrollador full stack.
 
 
 ## 🌐 Socials:
