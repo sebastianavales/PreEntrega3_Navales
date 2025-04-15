@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "Berlin Sans FB Demi";
+    src: url("../fonts/Berlin\ Sans\ FB\ Demi\ Bold.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Eras Medium ITC";
+    src: url("../fonts/ITC\ Eras\ Medium.otf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../fonts/Century\ Gothic\ Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+/* Estilos generales */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Header */
+header,
+header a {
+    background-color: #00976C;
+    color: white !important;
+}
+
+.marca {
+    font-family: "Eras Medium ITC";
+    font-size: 30px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%237F4F00' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.nav-link:hover {
+    color: #7F4F00 !important;
+}
+
+li,
+li a {
+    font-family: "Century Gothic";
+}
+
+/* Main - Contenido de la pagina */
+.seccion {
+    font-family: "Berlin Sans FB Demi";
+    font-size: 2em;
+    color: #7F4F00;
+}
+
+main h3 {
+    font-family: "Century Gothic";
+    color: #7F4F00;
+    font-weight: bold;
+}
+main h5 {
+    font-family: "Century Gothic";
+    color: #7F4F00;
+    font-weight: bold;
+}
+
+main p {
+    font-family: "Century Gothic";
+    color: #7F4F00;
+}
+
+#carrusel_inicio {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+    background-color: white;
+}
+
+#carrusel_inicio .carousel-inner,
+#carrusel_inicio .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+#carrusel_inicio .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    display: block;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-text {
+    margin-top: auto;
+}
+
+/* Footer */
+footer {
+    font-size: small;
+    background-color: #00976C;
+    color: white;
+}
+
+footer h4 {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: medium;
+}
+
+.foot-link {
+    color: white;
+    text-decoration: none;
+}
+
+.foot-link:hover {
+    color: #7F4F00;
+}
+
+.copyright p {
+    font-family: "Century Gothic";
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
