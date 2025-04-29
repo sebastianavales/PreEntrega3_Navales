@@ -1,184 +1,320 @@
+@charset "UTF-8";
 @font-face {
-    font-family: "Berlin Sans FB Demi";
-    src: url("../fonts/Berlin\ Sans\ FB\ Demi\ Bold.ttf") format("truetype");
-    font-weight: normal;
+  font-family: "Berlin Sans FB Demi";
+  src: url("../fonts/Berlin Sans FB Demi Bold.ttf") format("truetype");
+  font-weight: normal;
 }
-
 @font-face {
-    font-family: "Eras Medium ITC";
-    src: url("../fonts/ITC\ Eras\ Medium.otf") format("truetype");
-    font-weight: normal;
+  font-family: "Eras Medium ITC";
+  src: url("../fonts/ITC Eras Medium.otf") format("truetype");
+  font-weight: normal;
 }
-
 @font-face {
-    font-family: "Century Gothic";
-    src: url("../fonts/Century\ Gothic\ Regular.ttf") format("truetype");
-    font-weight: normal;
+  font-family: "Century Gothic";
+  src: url("../fonts/Century Gothic Regular.ttf") format("truetype");
+  font-weight: normal;
 }
-
-/* Estilos generales */
-body {
-    font-family: "Arial", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: black;
-}
-
 html,
 body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  font-family: "Arial", sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
-/* Header */
 header,
 header a {
-    background-color: #00976C;
-    color: white !important;
+  background-color: #00976C;
+  color: white !important;
 }
 
 .marca {
-    font-family: "Eras Medium ITC";
-    font-size: 30px;
+  font-family: "Eras Medium ITC", "Arial";
+  font-size: 30px;
 }
 
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active {
-    border: none;
-    outline: none;
-    box-shadow: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler:hover .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%237F4F00' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#7F4F00' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-
 .nav-link:hover {
-    color: #7F4F00 !important;
+  color: #7F4F00 !important;
 }
 
 li,
 li a {
-    font-family: "Century Gothic";
+  font-family: "Century Gothic", "Arial";
 }
 
-/* Main - Contenido de la pagina */
 .seccion {
-    font-family: "Berlin Sans FB Demi";
-    font-size: 2em;
-    color: #7F4F00;
+  font-family: "Berlin Sans FB Demi", "Arial";
+  font-size: 2em;
+  color: #7F4F00;
 }
 
-main h3 {
-    font-family: "Century Gothic";
-    color: #7F4F00;
-    font-weight: bold;
-}
+main h3,
 main h5 {
-    font-family: "Century Gothic";
-    color: #7F4F00;
-    font-weight: bold;
+  font-family: "Century Gothic", "Arial";
+  color: #7F4F00;
+  font-weight: bold;
 }
-
 main p {
-    font-family: "Century Gothic";
-    color: #7F4F00;
+  font-family: "Century Gothic", "Arial";
+  color: #7F4F00;
 }
 
 #carrusel_inicio {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    max-width: 900px;
-    margin: auto;
-    aspect-ratio: 16 / 9;
-    background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  margin: auto;
+  aspect-ratio: 16/9;
+  background-color: white;
 }
-
 #carrusel_inicio .carousel-inner,
 #carrusel_inicio .carousel-item {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
 #carrusel_inicio .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 1.5rem;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
 }
 
 .card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
 }
-
 .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.card .card-text {
+  margin-top: auto;
 }
 
-.card-body {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.sobre-nosotros__intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  font-size: 1.1rem;
+}
+.sobre-nosotros__mision-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.sobre-nosotros__bloque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  text-align: center;
+}
+.sobre-nosotros__imagen {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.sobre-nosotros__texto h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #7F4F00;
+}
+.sobre-nosotros__valores {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.sobre-nosotros__valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.sobre-nosotros__valores .valor {
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.sobre-nosotros__valores .valor h3 {
+  font-family: "Century Gothic", "Arial";
+  font-size: 1.5rem;
+  color: #7F4F00;
+  font-weight: bold;
+}
+.sobre-nosotros__valores .valor h4 {
+  font-family: "Century Gothic", "Arial";
+  font-size: 1.5rem;
+  color: #7F4F00;
+  font-weight: bold;
 }
 
-.card-text {
-    margin-top: auto;
+.contacto {
+  /* Estilo para el fondo de la sección de contacto */
+  background: url("../images/campo.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-blend-mode: overlay;
+  position: relative;
+  z-index: 1;
+  /* Fondo semi-transparente */
+}
+.contacto__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .contacto__contenido {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
+.contacto__formulario, .contacto__datos {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.contacto__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contacto__grupo {
+  display: flex;
+  flex-direction: column;
+}
+.contacto label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: "Century Gothic", "Arial";
+  color: #7F4F00;
+}
+.contacto input,
+.contacto textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-family: "Century Gothic", "Arial";
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.contacto input:focus,
+.contacto textarea:focus {
+  border-color: #00976C;
+  box-shadow: 0 0 5px rgba(0, 151, 108, 0.5);
+  outline: none;
+}
+.contacto__boton {
+  padding: 0.75rem 2rem;
+  background-color: #00976C;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Century Gothic", "Arial";
+  transition: background-color 0.3s;
+}
+.contacto__boton:hover {
+  background-color: #7F4F00;
+}
+.contacto__datos h3 {
+  margin-bottom: 1rem;
+  font-family: "Century Gothic", "Arial";
+  font-size: 1.5rem;
+  color: #7F4F00;
+}
+.contacto__datos p {
+  margin: 0.5rem 0;
+  font-family: "Century Gothic", "Arial";
+  color: #7F4F00;
+}
+.contacto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.94);
+  z-index: -1;
 }
 
-/* Footer */
 footer {
-    font-size: small;
-    background-color: #00976C;
-    color: white;
+  font-size: small;
+  background-color: #00976C;
+  color: white;
 }
-
 footer h4 {
-    font-family: "Century Gothic";
-    font-weight: bold;
-    font-size: medium;
+  font-family: "Century Gothic", "Arial";
+  font-weight: bold;
+  font-size: medium;
 }
 
 .foot-link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-
 .foot-link:hover {
-    color: #7F4F00;
+  color: #7F4F00;
 }
 
 .copyright p {
-    font-family: "Century Gothic";
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
+  font-family: "Century Gothic", "Arial";
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
 }
+
+/*# sourceMappingURL=style.css.map */

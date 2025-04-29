@@ -37,9 +37,6 @@
                             <a class="nav-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pedidos.html">Pedidos</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -49,10 +46,42 @@
     </header>
 
     <!-- Cuerpo de la página -->
-    <main class="container-fluid py-4 px-4">
+    <main class="container-fluid py-4 px-4 contacto">
         <!-- Subtítulo -->
         <div class="mb-4 text-center">
             <h2 class="seccion">Contacto</h2>
+        </div>
+        <!-- Parrafo explicativo -->
+        <div>
+            <p class="text-center">Contáctanos a través de nuestros distintos canales o déjanos tus datos y te
+                contactaremos lo más pronto posible.</p>
+        </div>
+        <!-- Formulario de contacto -->
+        <div class="contacto__contenido">
+            <form class="contacto__formulario">
+                <div class="contacto__grupo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="contacto__grupo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+                <div class="contacto__grupo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="contacto__boton">Enviar mensaje</button>
+            </form>
+
+            <!-- Datos de contacto -->
+            <div class="contacto__datos">
+                <h3>También puedes encontrarnos:</h3>
+                <p><strong>Email:</strong> xxxx@jucaling.com</p>
+                <p><strong>Teléfono:</strong> +57 xxxxx</p>
+                <p><strong>Dirección:</strong> xxxxxx</p>
+            </div>
         </div>
     </main>
 
@@ -67,7 +96,6 @@
                         <li><a href="../index.html" class="foot-link">Inicio</a></li>
                         <li><a href="sobre_nosotros.html" class="foot-link">Sobre nosotros</a></li>
                         <li><a href="productos.html" class="foot-link">Productos</a></li>
-                        <li><a href="pedidos.html" class="foot-link">Pedidos</a></li>
                         <li><a href="contacto.html" class="foot-link">Contacto</a></li>
                     </ul>
                 </div>
